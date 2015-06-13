@@ -1,0 +1,4 @@
+#!/bin/bash
+
+problem=$(ls -tr *.cpp | tail -n 1)
+vim $problem
