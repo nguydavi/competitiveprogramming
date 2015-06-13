@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 SPOJ_ID"
+    exit 0
+fi
+
+problemId=$(echo $1 | tr '[:lower:]' '[:upper:]')
+cp -i ../template.cpp ${problemId}.cpp
+vim ${problemId}.cpp
