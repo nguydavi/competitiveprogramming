@@ -1,0 +1,7 @@
+#!/bin/bash
+
+problemX=$(ls -tr *.cpp | tail -1)
+problemX=$(basename -s .cpp $problemX)
+echo "Compiling and running problem $(tr '[:lower:]' '[:upper:]' <<< $problemX)"
+
+g++ -std=c++11 -g -o $problemX.out $problemX.cpp && time ./$problemX.out <input

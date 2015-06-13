@@ -1,0 +1,12 @@
+#!/bin/bash
+
+if [ -e "a.cpp" ]
+then
+    echo "Please clear the previous source files"
+fi
+
+cp -i ../template.cpp a.cpp
+cp -i ../template.cpp b.cpp
+cp -i ../template.cpp c.cpp
+cp -i ../template.cpp d.cpp
+cp -i ../template.cpp e.cpp
