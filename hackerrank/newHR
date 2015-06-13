@@ -1,0 +1,10 @@
+#!/bin/bash
+
+if [ $# -ne 1 ]; then
+    echo "Usage: $0 UVA_ID"
+    exit 0
+fi
+
+problemId=$1
+cp -i ../template.cpp ${problemId}.cpp
+vim ${problemId}.cpp
