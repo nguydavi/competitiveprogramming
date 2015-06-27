@@ -1,8 +1,0 @@
-#!/bin/bash
-
-sourceFile=`ls *.cpp -tr | tail -n 1`
-#echo "Compiling and running $sourceFile.."
-
-#g++ -std=c++11  -g -o a.out $sourceFile && time ./a.out < input
-g++ -std=c++11  -g -o a.out $sourceFile && time ./a.out < corporate_gifting.txt
-
